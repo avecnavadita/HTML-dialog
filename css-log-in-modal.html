@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&family=Montserrat:wght@300&family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        dialog {
+            width: 500px;
+            min-height: 500px;
+            padding: 0;
+            box-shadow: 0px 0px 7px 5px #9e9e9e40;
+            border: 0;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        header button {
+            font-family: 'Lexend', sans-serif;
+            font-size: 18px;
+            padding: 9px;
+        }
+        input{
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        form {
+            padding: 0 30px;
+        }
+
+        input {
+            padding: 5px;
+            height: 20px;
+            border-radius: 3px;
+            width: 97%;
+            outline: thin;
+            font-size: 17px;
+            border: 2px solid grey;
+        }
+
+        dialog button {
+            width: 100%;
+            padding: 7px;
+            font-size: 20px;
+            background: #00800036;
+            font-family: 'Lexend', sans-serif;
+        }
+
+        footer button{
+            background: #ff000045;
+            width:auto;
+            font-family: 'Lexend', sans-serif;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 2px;
+        }
+
+        .input-wrapper {
+            margin: 15px 0;
+            font-size: 20px;
+        }
+
+        .image-icon {
+            display: flex;
+            justify-content: center;
+        }
+
+        .image-icon img {
+            width: 220px;
+            margin: 55px 40px;
+            margin-left: 85px;
+        }
+
+        footer {
+            background: #f1f1f1;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 85px;
+            border-top: 1px solid #80808063;
+        }
+
+        input[type="checkbox"] {
+            width: 20px;
+            /* background: chocolate; */
+            margin-right: 15px;
+        }
+
+        .remember-me {
+            display: flex;
+        }
+
+        .close {
+            float: right;
+            padding: 10px;
+        }
+
+        .forgot-password {
+            font-size: 18px;
+        }
+
+        h1 {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 50px;
+            letter-spacing: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>Login Modal</h1>
+            <button>Login</button>
+        </header>
+        <main>
+            <dialog open>
+                <header>
+                <div class="close">
+                    <span class="material-icons">
+                        close
+                    </span>
+                </div>
+                </header>
+
+                <main>
+                <div class="image-icon">
+                    <img src="assets/avatar2.png" tile="icon">
+                </div>
+                <form>
+                    <div class="input-wrapper">
+                        <label for="username">Username</label>
+                        <input type="text" placeholder="Enter Usename" id="username" required>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="password">Password</label>
+                        <input type="password" placeholder="Enter Password" id="password" required>
+                    </div>
+                    <div class="input-wrapper">
+                        <button>Login</button>
+                    </div>
+                    <div class="input-wrapper remember-me">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+                </form>
+                </main>
+
+                <footer>
+                    <div class="cancel-button">
+                        <button>Cancel</button>
+                    </div>
+                    <div class="forgot-password">
+                        <p>Forgot <u>Password</u></p>
+                    </div>
+                </footer>
+            </dialog>
+        </main>
+    </div>
+</body>
+</html>
