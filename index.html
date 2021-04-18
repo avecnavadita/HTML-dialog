@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&family=Montserrat:wght@300&family=Quicksand:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css">
     <script src="assets/script.js"></script>
     <meta charset="UTF-8">
@@ -16,12 +18,15 @@
     <div id="container">
         <header>
             <h1>Login Modal</h1>
-            <button onclick="showLogin()">Login</button>
+            <button onclick="showLogin()"><span class="material-icons">
+                lock
+                </span>
+            Login</button>
         </header>
         <main>
             <dialog>
                 <header>
-                <div class="close">
+                <div class="close" onclick="hideLogin()">
                     <span class="material-icons">
                         close
                     </span>
