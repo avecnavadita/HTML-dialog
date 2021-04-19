@@ -78,7 +78,10 @@ dialog button {
     background: #00800036;
     font-family: 'Lexend', sans-serif;
 }
-
+.cross:hover {
+    transform: rotate(180deg);
+    transition: transform 1s;
+}
 footer button{
     background: #ff000045;
     width:auto;
