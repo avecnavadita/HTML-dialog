@@ -71,9 +71,6 @@ a {
     color: black;
 }
 
-.close:hover {
-    background: #99999987;
-}
 
 .forgot-password a:hover {
     color: #ff0000;
