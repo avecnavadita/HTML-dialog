@@ -5,6 +5,7 @@ function showLogin(){
     const el = document.getElementsByTagName('dialog')[0];
     // 2 add open attribute to the dialog
     el.setAttribute("open", "");
+    el.classList.toggle("elDialog");
 }
 
 // hides the dialog 
