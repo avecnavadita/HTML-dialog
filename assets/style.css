@@ -81,12 +81,12 @@ a {
 
 input {
     padding: 5px;
-    height: 28px;
+    height: 40px;
     border-radius: 3px;
-    width: 97%;
-    outline: thin;
+    width: 100%;
     font-size: 17px;
-    border: 2px solid grey;
+    border: 1px solid grey;
+    box-sizing: border-box;
     font-family: 'Lexend', sans-serif;
 }
 
@@ -97,7 +97,10 @@ dialog button {
     background: #00800036;
     font-family: 'Lexend', sans-serif;
 }
-
+.cross:hover {
+    transform: rotate(180deg);
+    transition: transform 1s;
+}
 footer button{
     background: #ff000045;
     width:auto;
