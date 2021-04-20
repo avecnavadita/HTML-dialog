@@ -130,6 +130,7 @@ input[type="checkbox"] {
 .close {
     float: right;
     padding: 10px;
+    cursor: pointer;
 }
 
 .forgot-password {
