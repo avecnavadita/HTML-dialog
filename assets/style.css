@@ -94,6 +94,12 @@ dialog button {
     background: #00800036;
     font-family: 'Lexend', sans-serif;
 }
+
+.cross {
+    font-size: 40px;
+    color: #d9b193;
+}
+
 .cross:hover {
     transform: rotate(180deg);
     transition: transform 1s;
@@ -144,6 +150,7 @@ input[type="checkbox"] {
 
 .remember-me {
     display: flex;
+    align-items: center;
 }
 
 .close {
