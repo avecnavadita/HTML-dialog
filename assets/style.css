@@ -57,15 +57,21 @@ h5 {font-size: 1.25rem;}
 
 small, .text_small {font-size: 0.8rem;}
 
-dialog {
+.dialog-wrapper{
+     display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 800px;
     width: 600px;
-    min-height: 500px;
+}
+
+dialog {
     padding: 0;
     box-shadow: 0px 0px 700px 700px rgba(0,0,0,0.4);;
     border: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    top: 50px;
+    
+    /* height: 800px; */
     
 }
 
@@ -105,7 +111,7 @@ span.material-icons a {
 }
 
 form {
-    padding: 0 30px;
+    margin: 50px 30px;
 }
 
 a {
@@ -172,9 +178,8 @@ label {
 }
 
 .image-icon img {
-    width: 220px;
-    margin: 55px 40px;
-    margin-left: 85px;
+    width: 100px;
+    margin: 1px;
 }
 
 footer {
@@ -183,7 +188,6 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 85px;
     border-top: 1px solid #80808063;
 }
 
@@ -214,153 +218,25 @@ input[type="checkbox"] {
 @media screen and (max-device-width: 420px) {
 
     dialog {
-        width: 100%;
-        padding: 0;
         box-shadow: revert;
-        border: 0;
-        /* height: 100%; */
-        position: absolute;
+        width: 100vw;
         top: 0;
-        /* left: 0;
-        right: 0;
-        bottom: 0; */
         height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
     }
 
-    header button {
-        font-family: 'Lexend', sans-serif;
-        font-size: 20px;
-        padding: 9px;
-        display: flex;
-        align-items: center;
-        font-weight: bold;
-        letter-spacing: 1px;
-        background: #4caf503b;
-        width: 100%;
-        justify-content: center;
-        letter-spacing: 2px;
+    div#container {
+        width: revert;
     }
 
-    button span.material-icons {
-        padding-right: 5px;
-        font-size: 20px;
-    }
-
-    span.material-icons a {
-        text-decoration: none;
-        color: black;
-    }
-
-    form {
-        padding: 0 30px;
-    }
-
-    a {
-        color: black;
-    }
-
-    header button:hover {
-        background: #d6ecd787;
-    }
-
-    .forgot-password a:hover {
-        color: #ff0000;
-    }
-
-    input {
-        padding: 5px;
-        height: 40px;
-        border-radius: 3px;
-        width: 100%;
-        font-size: 17px;
-        border: 1px solid grey;
+    .dialog-wrapper footer {
+        bottom: 0;
+       
         box-sizing: border-box;
-        font-family: 'Lexend', sans-serif;
     }
 
-    dialog button {
-        width: 100%;
-        padding: 7px;
-        font-size: 20px;
-        background: #00800036;
-        font-family: 'Lexend', sans-serif;
-    }
-
-    .cross {
-        font-size: 35px;
-        color: #d9b193;
-    }
-
-    .cross:hover {
-        transform: rotate(180deg);
-        transition: transform 1s;
-    }
-    footer button{
-        background: #ff000045;
-        width:auto;
-        font-family: 'Lexend', sans-serif;
-    }
-
-    label {
-        display: block;
-        font-weight: bold;
-        margin-bottom: 2px;
-        font-size: 17px;
-    }
-
-    .input-wrapper {
-        margin: 10px 0;
-        font-size: 20px;
-    }
-
-    .image-icon {
-        display: flex;
-        justify-content: center;
-    }
-
-    .image-icon img {
-        width: 110px;
-        margin: 55px 40px;
-        margin-left: 85px;
-    }
-
-    footer {
-        background: #f1f1f1;
-        padding: 10px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 35px;
-        border-top: 1px solid #80808063;
-        flex-direction: column;
-    }
-
-    input[type="checkbox"] {
-        width: 20px;
-        /* background: chocolate; */
-        margin-right: 15px;
-    }
-
-    .remember-me {
-        display: flex;
-        align-items: center;
-    }
-
-    .close {
-        float: right;
-        padding: 10px;
-        cursor: pointer;
-    }
-
-    .forgot-password {
-        font-size: 18px;
-    }
-
-    .input-wrapper-2 {
-        margin-top: 20px;
-    }
+    .dialog-wrapper{
+       height: 100vh;
+       width: 100vw;
+   }
     
 }
