@@ -14,6 +14,15 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+header button:hover {
+    background: #d6ecd787;
+}
+
+button span.material-icons {
+    padding-right: 10px;
+    font-size: 25px;
+}
+
 p {margin-bottom: 1rem;}
 
 h1, h2, h3, h4, h5 {
@@ -24,8 +33,19 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-  margin-top: 0;
-  font-size: 3.052rem;
+    margin-top: 20px;
+    font-size: 3.052rem;
+    animation-name: example;
+    animation-duration: 1s;
+    /* animation-iteration-count: 5; */
+    text-align: center;
+    margin-bottom: 45px;
+    letter-spacing: 7px;
+}
+
+@keyframes example {
+  from {color: rgb(0, 0, 0);}
+  to {color: #4dff523b;}
 }
 
 h2 {font-size: 2.441rem;}
@@ -47,6 +67,17 @@ dialog {
     
 }
 
+div#container header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div#container {
+    margin: 0 auto;
+    width: 1024px;
+}
+
 header button {
     font-family: 'Lexend', sans-serif;
     font-size: 18px;
@@ -56,6 +87,10 @@ header button {
     font-weight: bold;
     letter-spacing: 1px;
     background: #4caf503b;
+    width: 200px;
+    justify-content: center;
+    font-size: 25px;
+    letter-spacing: 2px;
 }
 
 button span.material-icons {
@@ -102,6 +137,10 @@ dialog button {
 .cross {
     font-size: 40px;
     color: #d9b193;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
 }
 
 .cross:hover {
@@ -169,7 +208,7 @@ input[type="checkbox"] {
 
 }
 
-@media screen and (max-device-width: 400px) {
+@media screen and (max-device-width: 420px) {
 
     /* Mobile */
 
@@ -211,12 +250,16 @@ h5 {font-size: 1.25rem;}
 small, .text_small {font-size: 0.8rem;}
 
 dialog {
-    width: 300px;
-    min-height: 500px;
+    width: 100%;
     padding: 0;
-    box-shadow: 0px 0px 700px 700px rgba(0,0,0,0.4);;
+    box-shadow: 0px 0px 700px 700px rgb(0 0 0 / 40%);
     border: 0;
-    
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 header button {
@@ -251,6 +294,9 @@ a {
     color: black;
 }
 
+header button:hover {
+    background: #d6ecd787;
+}
 
 .forgot-password a:hover {
     color: #ff0000;
@@ -321,6 +367,7 @@ footer {
     align-items: center;
     margin-top: 35px;
     border-top: 1px solid #80808063;
+    flex-direction: column;
 }
 
 input[type="checkbox"] {
