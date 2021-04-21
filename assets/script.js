@@ -6,7 +6,6 @@ function showLogin(){
     // 2 add open attribute to the dialog
     el.setAttribute("open", "");
     // el.classList.toggle("elDialog");
-    console.log('hello');
 }
 
 // hides the dialog 

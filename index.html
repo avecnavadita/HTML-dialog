@@ -26,47 +26,56 @@
         <main>
             <dialog>
                 <header>
-                <div class="close" onclick="hideLogin()">
-                    <span class="material-icons cross">
-                        close
-                    </span>
-                </div>
+
+                    <div class="close" onclick="hideLogin()">
+                        <span class="material-icons cross">
+                            close
+                        </span>
+                    </div>
+
                 </header>
 
                 <main>
-                <div class="image-icon">
-                    <img src="assets/avatar2.png" tile="icon">
-                </div>
-                <form>
-                    <div class="input-wrapper">
-                        <label for="username">Username</label>
-                        <input type="text" placeholder="Enter Usename" id="username" required>
+
+                    <div class="image-icon">
+                        <img src="assets/avatar2.png" tile="icon">
                     </div>
-                    <div class="input-wrapper">
-                        <label for="password">Password</label>
-                        <input type="password" placeholder="Enter Password" id="password" required>
-                    </div>
-                    <div class="input-wrapper-2">
-                        <button>Login</button>
-                    </div>
-                    <div class="input-wrapper remember-me">
-                        <input type="checkbox" id="remember">
-                        <label for="remember">Remember me</label>
-                    </div>
-                </form>
+                    <form>
+                        <div class="input-wrapper">
+                            <label for="username">Username</label>
+                            <input type="text" placeholder="Enter Usename" id="username" required>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="password">Password</label>
+                            <input type="password" placeholder="Enter Password" id="password" required>
+                        </div>
+                        <div class="input-wrapper-2">
+                            <button>Login</button>
+                        </div>
+                        <div class="input-wrapper remember-me">
+                            <input type="checkbox" id="remember">
+                            <label for="remember">Remember me</label>
+                        </div>
+                    </form>
 
                 </main>    
                 
                 <footer>
+
                     <div class="cancel-button">
                         <button>Cancel</button>
                     </div>
                     <div class="forgot-password">
                         <p>Forgot <a href="forgot_password.html" target="_blank">Password</a></p>
                     </div>
+
                 </footer>
+
             </dialog>
         </main>        
     </div>
+    <script>
+        hideLogin();
+    </script>
 </body>
 </html>
