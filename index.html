@@ -21,13 +21,13 @@
             <button onclick="showLogin()"><span class="material-icons">
                 lock
                 </span>
-            Login</button>
+            <span class="login-lock">Login</span></button>
         </header>
         <main>
             <dialog>
                 <header>
                 <div class="close" onclick="hideLogin()">
-                    <span class="material-icons">
+                    <span class="material-icons cross">
                         close
                     </span>
                 </div>
@@ -46,7 +46,7 @@
                         <label for="password">Password</label>
                         <input type="password" placeholder="Enter Password" id="password" required>
                     </div>
-                    <div class="input-wrapper">
+                    <div class="input-wrapper-2">
                         <button>Login</button>
                     </div>
                     <div class="input-wrapper remember-me">
@@ -55,23 +55,18 @@
                     </div>
                 </form>
 
-                <p>Hello Navadita</p>
-                <p>Hi, from Prinsha</p>
-                <p>Hi, from Prabina</p>
-                <p>Hi, from Nava</p>
-
-                </main>
-
+                </main>    
+                
                 <footer>
                     <div class="cancel-button">
                         <button>Cancel</button>
                     </div>
                     <div class="forgot-password">
-                        <p>Forgot <u>Password</u></p>
+                        <p>Forgot <a href="forgot_password.html" target="_blank">Password</a></p>
                     </div>
                 </footer>
             </dialog>
-        </main>
+        </main>        
     </div>
 </body>
 </html>
